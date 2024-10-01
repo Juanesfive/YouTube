@@ -1,0 +1,41 @@
+@import url(./style.css);
+
+.search__container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 600px;
+}
+
+.search__container form {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.search__container input {
+  height: 40px;
+  width: 100%;
+  background-color: var(--color-carbónoscuro-buscador);
+  color: #f2f2f2;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px 0 0 10px;
+}
+
+.search__container button {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--color-carbónoscuro-buscador);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.search__container form ~ button {
+  border-radius: var(--border-radius-boton);
+}

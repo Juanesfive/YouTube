@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url(./Imagenes.css);
+@import url(./texto.css);
+@import url(./logos.css);
+@import url(./buscador.css);
+@import url(./perfil.css);
 
 * {
   margin: 0;
@@ -21,31 +26,13 @@ body {
   height: 100vh;
 }
 
-img {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-a {
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: #fff;
-}
-
-h1 {
-  font-size: 1.5rem;
-}
-
 .header {
   display: flex;
   grid-area: header;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: var(--color-negro-header);
   width: 100%;
   height: 56px;
   justify-content: space-between;
@@ -53,87 +40,13 @@ h1 {
   padding-right: 10px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.logo h1 {
-  letter-spacing: -1px;
-  color: #fff;
-}
-
-.logo__container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.logo-img {
-  position: relative;
-  height: 25px;
-  width: 30px;
-}
-.search-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  width: 600px;
-}
-
-.search-container form {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-
-.search-container input {
-  height: 40px;
-  width: 100%;
-  background-color: #121212;
-  color: #f2f2f2;
-  padding: 12px;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px 0 0 10px;
-}
-
-.search-container button {
-  width: 40px;
-  min-width: 40px;
-  height: 40px;
-  background-color: #131313;
-  color: #fff;
-  outline: none;
-  border: none;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-}
-
-.search-container form ~ button {
-  border-radius: 50%;
-}
-
-.perfil-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.perfil-container img {
-  border-radius: 50px;
-  height: 30px;
-  width: 30px;
-}
-
-.perfil-container a {
-  display: flex;
-  max-width: 400px;
-  height: 40px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
+:root {
+  --color-blanco-texto: #fff;
+  --tamaño-fuente-h1: 1.5rem;
+  --color-negro-header: rgb(0, 0, 0);
+  --color-carbónoscuro-buscador: rgb(18, 18, 18);
+  --border-radius-boton: 50%;
+  --border-radius-img: 50px;
 }
 
 .sidebar {
