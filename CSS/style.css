@@ -53,6 +53,8 @@ body {
   grid-area: sidebar;
   background-color: #121212;
   padding-top: 10px;
+  overflow-y: scroll;
+
 }
 
 .sidebar-items{
@@ -69,6 +71,7 @@ body {
   font-size: 16px;
   
 }
+
 
 .sidebar-item i{
   margin-right: 24px;
@@ -90,6 +93,23 @@ h4{
   font-weight: bold;
   text-transform: uppercase;
   margin-left: 24px;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+  background-color: #727272;
+  color: #717171;
+
+
 }
 
 .container {
