@@ -21,8 +21,8 @@ body {
   grid-template-columns: 240px 1fr;
   grid-template-rows: 56px 1fr;
   grid-template-areas:
-    "header" "herder"
-    "sidebar" "container";
+    'header herder'
+    'sidebar container';
   height: 100vh;
 }
 
@@ -51,6 +51,45 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+  background-color: #121212;
+  padding-top: 10px;
+}
+
+.sidebar-items{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-item{
+  height: 40px;
+  /* gap: 20px; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  
+}
+
+.sidebar-item i{
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.sidebar-item:hover{
+  background-color: aqua;
+}
+
+hr{
+ border: solid 1px rgba(255, 255, 255, 0.1);
+ margin: 12px 0;
+}
+
+h4{
+  color: #525252;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 24px;
 }
 
 .container {
