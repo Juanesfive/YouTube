@@ -38,6 +38,7 @@ body {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
+  gap: 6px;
 }
 
 :root {
@@ -67,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .sidebar-item i {
@@ -216,4 +217,32 @@ h4 {
   color: #aaa;
   margin-top: 4px;
   gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    grid-template-columns: 70px;
+  }
+
+  .sidebar-item span,
+  h4 {
+    display: none;
+  }
+
+  .sidebar-items {
+    padding: 0;
+  }
+
+  .sidebar-item {
+    padding: 0 20px;
+  }
+  .chips-wapper {
+    max-width: calc(100vw - 70px);
+  }
+}
+
+@media (max-width: 800px) {
+  .search__container {
+    display: none;
+  }
 }
