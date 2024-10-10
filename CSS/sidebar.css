@@ -1,0 +1,31 @@
+@import url(./style.css);
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #121212;
+    padding-top: 10px;
+    overflow-y: scroll;
+  }
+  
+  .sidebar--items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar--item {
+    height: 40px;
+    /* gap: 20px; */
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  
+  .sidebar--item i {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  
+  .sidebar--item:hover {
+    background-color: aqua;
+  }

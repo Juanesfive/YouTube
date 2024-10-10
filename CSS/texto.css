@@ -9,3 +9,11 @@ a {
 h1 {
   font-size: var(--tamaño-fuente-h1);
 }
+
+h4 {
+  color: #525252;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 24px;
+}

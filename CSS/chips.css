@@ -1,0 +1,30 @@
+@import url(./style.css);
+
+
+.chips__wapper {
+    overflow-x: scroll;
+    background-color: #151515;
+    display: flex;
+    padding-left: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: calc(100vw - 240px);
+  }
+  .chips__wapper::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .chips__wapper::-webkit-scrollbar-thumb {
+    background-color: #737070;
+  }
+  
+  .chips {
+    margin: 12px 6px;
+    background-color: #373737;
+    padding: 6px 12px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 16px;
+    white-space: nowrap;
+    transition: 0.5s;
+  }
